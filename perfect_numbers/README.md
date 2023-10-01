@@ -10,7 +10,7 @@ A perfect number is a positive integer that is equal to the sum of its positive 
 
 The following table shows all perfect numbers below 1,000,000.
 * **PN n** - Perfect number $n$
-* **d(n)** - Divisor function $\operatorname{d}(n)$ (number of divisors of $n$)
+* **d(n)** - Divisor function $\text{d}(n)$ (number of divisors of $n$)
 
 |    |   PN n |   d(n) | Divisors of n                                                   |
 |---:|-------:|-------:|:----------------------------------------------------------------|

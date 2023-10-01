@@ -10,7 +10,7 @@ A highly composite number is a positive integer that has more divisors than any 
 
 The following table shows all highly composite numbers below 10,000,000.
 * **HCN n** - Highly composite number $n$
-* **d(n)** - Divisor function $\operatorname{d}(n)$ (number of divisors of $n$)
+* **d(n)** - Divisor function $\text{d}(n)$ (number of divisors of $n$)
 * **k!** - If $n$ has an inverse factorial, then $k! = n$
 
 |    |     HCN n |   d(n) |   k! |
