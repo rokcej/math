@@ -1,3 +1,5 @@
+# Find bases with the best radix economy
+
 import math
 from collections import defaultdict
 from tabulate import tabulate
