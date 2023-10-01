@@ -7,7 +7,7 @@ from tqdm import tqdm
 MAX_N = 1000000 # Highest number to test
 MAX_B = 16      # Highest radix (base) to test
 # Output formatting
-TABULATE_KWARGS = { "tablefmt": "simple_grid", "floatfmt": ".2f", "intfmt": "," }
+TABULATE_KWARGS = { "tablefmt": "simple_grid", "floatfmt": ",.2f", "intfmt": "," }
 PRINT_INTERMEDIATE_RESULTS = True
 
 
