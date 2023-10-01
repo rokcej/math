@@ -4,10 +4,11 @@ from tabulate import tabulate
 from tqdm import tqdm
 
 # Configuration
-MAX_N = 1000000                                                     # Highest number to test
-MAX_B = 16                                                          # Highest radix (base) to test
-TABULATE_KWARGS = { "tablefmt": "simple_grid", "floatfmt": ".2f" }  # Output formatting
-PRINT_INTERMEDIATE_RESULTS = True                                   # Display intermediate results while computing final output
+MAX_N = 1000000 # Highest number to test
+MAX_B = 16      # Highest radix (base) to test
+# Output formatting
+TABULATE_KWARGS = { "tablefmt": "simple_grid", "floatfmt": ".2f", "intfmt": "," }
+PRINT_INTERMEDIATE_RESULTS = True
 
 
 # Helper functions
@@ -51,14 +52,14 @@ for n in tqdm(range(1, MAX_N + 1)):
         best_table.append([n, best_b, best_count, best_ratio])
 
         if PRINT_INTERMEDIATE_RESULTS:
-            tqdm.write(f" N <= {n} ")
+            tqdm.write(f" N <= {n:,} ")
             intermediate_table = []
             for b, count in sorted(b_counts.items()):
                 ratio = count / total_count
                 intermediate_table.append((b, count, ratio))
-            tqdm.write(tabulate(intermediate_table, headers=["base", "count", "ratio"], **TABULATE_KWARGS))
+            tqdm.write(tabulate(intermediate_table, headers=["Base", "Count", "Ratio"], **TABULATE_KWARGS))
             tqdm.write("")
 
 print()
 print(" BEST BASES ")
-print(tabulate(best_table, headers=["Max N", "base", "count", "ratio"], **TABULATE_KWARGS))
+print(tabulate(best_table, headers=["Max N", "Base", "Count", "Ratio"], **TABULATE_KWARGS))
