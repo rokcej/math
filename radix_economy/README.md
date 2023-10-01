@@ -6,7 +6,7 @@ Radix economy of a number $N$ in a particular base $b$ is defined as the number 
 
 Asymptotically ($N \rightarrow \infty$), base 3 has the best radix economy. But what is the best base for lower values of $N$? How does the best base change as $N$ increases?
 
-Just to clarify, we are only interested in values of $b$ and $N$ that are integers ($b, N  \in \N; b \ge 2$).
+Just to clarify, we are only interested in values of $b$ and $N$ that are integers ($b, N  \in \mathbb{N}; b \ge 2$).
 
 ## Equations
 
